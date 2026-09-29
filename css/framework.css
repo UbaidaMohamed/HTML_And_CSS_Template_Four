@@ -1,9 +1,19 @@
+:root {
+ --blue-color: #0075ff;
+ --blue-alt-color: #0d69d5;
+ --orange-color: #f59e0b;
+ --red-color: #f44336;
+ --gray-color: #888;
+}
 /* Start Box */
 .d-flex {
  display: flex;
 }
 .align-center{
  align-items: center;
+}
+.w-full{
+ width: 100%;
 }
 /* End Box */
 
@@ -48,3 +58,11 @@
  font-size: 14px;
 }
 /* End Font */
+
+/* Start Component */
+.between-flex {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+/* End Component */
