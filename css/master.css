@@ -43,6 +43,12 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
  background-color: var(--blue-alt-color);
 }
+
+@media (max-width: 768px){
+ ::-webkit-scrollbar {
+  width: 1px;
+ }
+}
 /* Start Sidebar */
 .sidebar {
  width: 250px;
@@ -154,7 +160,7 @@ ul {
 .content .head .icons img {
  width: 32px;
  height: 32px;
- margin-left: 15px;
+ margin: auto 15px;
 }
 .page h1 {
  margin: 20px 20px 40px;
@@ -233,3 +239,17 @@ ul {
  }
 }
 /* End Welcome Widget*/
+/* Start Quick Draft Widget*/
+.quick-draft textarea {
+ resize: none;
+ min-height: 180px;
+}
+.quick-draft .save {
+ margin-left: auto;
+ transition: 300ms;
+ cursor: pointer;
+}
+.quick-draft .save:hover {
+ background-color: var(--blue-alt-color);
+}
+/* End Quick Draft Widget*/
