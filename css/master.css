@@ -313,3 +313,15 @@ ul {
  background-color: rgb(34 197 94 / 20%);
 }
 /* End Targets */
+/* Start Tickets */
+.ticketes .box {
+ border: 1px solid #ccc;
+ width: calc(50% - 10px)
+}
+@media(max-width: 767px)
+{
+ .ticketes .box {
+  width: 100%
+ }
+}
+/* End Tickets */
