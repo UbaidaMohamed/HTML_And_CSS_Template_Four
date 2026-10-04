@@ -39,6 +39,9 @@
 .space-between {
  justify-content: space-between;
 }
+.f-wrap {
+ flex-wrap: wrap;
+}
 /* End Box */
 
 /* Start Padding + Margin */
@@ -65,6 +68,9 @@
 }
 .mt-20 {
  margin-top: 20px;
+}
+.mb-5 {
+ margin-bottom: 5px;
 }
 .mb-10 {
  margin-bottom: 10px;
@@ -114,6 +120,9 @@
 .c-green {
  color: var(--green-color)
 }
+.c-red {
+ color: var(--red-color);
+}
 .c-grey {
  color: grey;
 }
@@ -139,6 +148,9 @@
 }
 .fs-15 {
  font-size: 15px;
+}
+.fs-25 {
+ font-size: 25px;
 }
 .fw-bold {
  font-weight: bold;
