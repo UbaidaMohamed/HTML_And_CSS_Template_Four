@@ -312,7 +312,6 @@ ul {
 .green .progress {
  background-color: rgb(34 197 94 / 20%);
 }
-
 /* End Targets */
 /* Start Latest News */
 .latest-news .news-row:not(:last-of-type){
