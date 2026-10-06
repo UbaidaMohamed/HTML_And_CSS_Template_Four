@@ -317,7 +317,7 @@ ul {
 .latest-news .news-row:not(:last-of-type){
  margin-bottom: 20px;
  padding-bottom: 20px;
- border-bottom: 1px solid #eee
+ border-bottom: 1px solid #eee;
 }
 .latest-news .news-row img{
  width: 100px;
@@ -341,6 +341,17 @@ ul {
  }
 }
 /* End Latest News */
+/* Start Tickets */
+.tickets .box {
+ border: 1px solid #ccc;
+ width: calc(50% - 10px);
+}
+@media(max-width: 767px) {
+ .tickets .box {
+    width: 100%;
+ }
+}
+/* End Tickets */
 /* Start Tasks */
 .tasks .task-row:not(:last-of-type){
  margin-bottom: 15px;
@@ -355,6 +366,6 @@ ul {
 }
 .tasks .done h3,
 .tasks .done p{
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 /* End Tasks */
