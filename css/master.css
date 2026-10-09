@@ -378,3 +378,51 @@ ul {
  height: 40px;
 }
 /* End Latest Uploads */
+/* Start Last Project */
+.last-project ul::before{
+ content: "";
+ position: absolute;
+ left: 11px;
+ width: 2px;
+ height: 100%;
+ background-color: var(--blue-color);
+}
+.last-project ul li::before{
+ content: "";
+ min-width: 20px;
+ height: 20px;
+ display: block;
+ border-radius: 50%;
+ background-color: white;
+ border: 2px solid white;
+ outline: 2px solid var(--blue-color);
+ margin-right: 15px;
+ z-index: 1;
+}
+.last-project ul li::after{
+ content: "";
+}
+.last-project ul li.done::before{
+ background-color: var(--blue-color);
+}
+.last-project ul li.current::before{
+ animation: change-color 700ms infinite alternate
+} 
+.last-project .lunch-icon {
+ position: absolute;
+ width: 180px;
+ right: 0;
+ bottom: 0;
+ opacity: .1;
+}
+/* End Last Project */
+/* Start Animations */
+@keyframes change-color {
+ from {
+  background-color: var(--blue-color);
+ }
+ to {
+  background-color: white;
+ }
+}
+/* End Animations */
