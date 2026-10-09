@@ -414,6 +414,7 @@ ul {
  right: 0;
  bottom: 0;
  opacity: .1;
+ animation: bounce 1s infinite alternate;
 }
 /* End Last Project */
 /* Start Reminders */
@@ -434,6 +435,19 @@ ul {
   border-left: 2px solid var(--orange-color);
 }
 /* End Reminders */
+/* Start Latest Posts */
+.latest-posts .avatar {
+ width: 48px;
+ height: 48px;
+}
+.latest-posts .post-content {
+ text-transform: capitalize;
+ line-height: 1.8;
+ border-top: 1px solid #eee;
+ border-bottom: 1px solid #eee;
+ min-height: 140px;
+}
+/* End Latest Posts */
 /* Start Animations */
 @keyframes change-color {
  from {
@@ -441,6 +455,17 @@ ul {
  }
  to {
   background-color: white;
+ }
+}
+@keyframes bounce {
+ 0% {
+  bottom: 5%;
+ }
+  50% {
+  bottom: 30%;
+ }
+  100% {
+  bottom: 0;
  }
 }
 /* End Animations */
