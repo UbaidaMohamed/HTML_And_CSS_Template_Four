@@ -36,6 +36,9 @@
 .w-fit {
  width: fit-content;
 }
+.h-full {
+ height: 100%;
+}
 .space-between {
  justify-content: space-between;
 }
@@ -47,6 +50,9 @@
 /* Start Padding + Margin */
 .p-10 {
  padding: 10px;
+}
+.p-15 {
+ padding: 15px;
 }
 .p-20 {
  padding: 20px;
