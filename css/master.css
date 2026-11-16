@@ -407,14 +407,14 @@ ul {
 }
 .last-project ul li.current::before{
  animation: change-color 700ms infinite alternate
-} 
+}
 .last-project .lunch-icon {
  position: absolute;
  width: 180px;
  right: 0;
  bottom: 0;
  opacity: .1;
- animation: bounce 1s infinite alternate;
+ animation: bounce 1.2s infinite alternate;
 }
 /* End Last Project */
 /* Start Reminders */
@@ -630,6 +630,64 @@ ul {
 .widgets-control .control input[type="checkbox"]:checked + label::after{
  transform: scale(1);
 }
+.backup-control input[type="radio"] {
+ -webkit-appearance: none;
+ appearance: none;
+}
+.backup-control .date label {
+ padding-left: 30px;
+ cursor: pointer;
+ position: relative;
+}
+.backup-control .date label::before {
+ content: "";
+ position: absolute;
+ top: 50%;
+ left: 0;
+ margin-top: -11px;
+ width: 18px;
+ height: 18px;
+ border: 2px solid var(--gray-color);
+ border-radius: 50%;
+}
+.backup-control .date label::after {
+ content: "";
+ position: absolute;
+ left: 0.18rem;
+ top: 0.03rem;
+ width: 15px;
+ height: 15px;
+ background-color: var(--blue-color);
+ border-radius: 50%;
+ transition: 0.3s;
+ transform: scale(0);
+}
+.backup-control .date input[type="radio"]:checked + label::before {
+ border-color: var(--blue-color);
+}
+.backup-control .date input[type="radio"]:checked + label::after {
+ transform: scale(1);
+}
+.backup-control .servers {
+ border-top: 1px solid #eee;
+ padding-top: 20px;
+}
+@media (max-width: 767px){
+ .backup-control .servers {
+  flex-wrap: wrap;
+ }
+}
+.backup-control .servers .server {
+ border: 2px solid #eee;
+ position: relative;
+}
+.backup-control .servers .server label {
+ cursor: pointer;
+}
+.backup-control .servers input[type="radio"]:checked + .server{
+ border-color: var(--blue-color);
+ color: var(--blue-color);
+}
 .toggle-checkbox {
  -webkit-appearance: none;
  appearance: none;
@@ -687,13 +745,13 @@ ul {
 }
 @keyframes bounce {
  0% {
-  bottom: 5%;
+  bottom: 10%;
  }
   50% {
-  bottom: 30%;
+  bottom: 5%;
  }
   100% {
-  bottom: 0;
+  bottom: 50%;
  }
 }
 /* End Animations */
